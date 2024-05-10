@@ -39,7 +39,7 @@ func main() {
 				fmt.Println("no hay tareas pendientes")
 			}
 			for id, tarea := range tasks {
-				fmt.Printf(" id :%d , tarea :%s ,description :%s completado: %t", id, tarea.Name, tarea.Description, tarea.Complet)
+				fmt.Printf(" id :%d , tarea :%s ,description :%s, completado: %t\n", id, tarea.Name, tarea.Description, tarea.Complet)
 			}
 		case 2:
 			fmt.Println("nombre de la tarea")
@@ -59,7 +59,7 @@ func main() {
 			}
 
 		case 3:
-			fmt.Print("ingrese el id de la tarea completada")
+			fmt.Print("ingrese el id de la tarea completada\n")
 			scanner.Scan()
 
 			id, _ := strconv.Atoi(scanner.Text())
